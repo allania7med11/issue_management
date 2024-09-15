@@ -1,0 +1,70 @@
+.error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+
+.issues {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.issue-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.issue-form input {
+    margin-left: 18px;
+    border-radius: 4px;
+}
+
+
+.issues-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.issues-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.issues-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+body {
+    background-color: rgba(0, 0, 0,0.1);
+}
+
+.issue {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.description {
+    color: gray
+}

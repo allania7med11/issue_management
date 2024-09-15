@@ -68,3 +68,9 @@ body {
 .description {
     color: gray
 }
+
+.action {
+    display: flex;
+    justify-content: end;
+    gap: 4px;
+}

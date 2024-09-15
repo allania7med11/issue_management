@@ -16,3 +16,22 @@ export const createIssue = async (issue) => {
     let obj = response && response.data ? response.data.data : {}
     return obj
 }
+
+export const updateIssue = async ({ id, title, description }) => {
+    try {
+        const response = await instance.post(`/issues/${id}/`, { title, description });
+        let obj = response && response.data ? response.data.data : null
+        return obj
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+export const deleteIssue = async (id) => {
+    try {
+        await instance.delete(`/issues/${id}/`);
+        return true
+    } catch (error) {
+        console.error(error);
+    }
+}

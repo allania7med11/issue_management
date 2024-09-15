@@ -31,7 +31,7 @@ export const Issues = () => {
                     <div className='issues-section'>
                         <div className='issues-section-title'>Issues</div>
                         <div className='issues-container'>
-                            {issues.map((issue, index) => <Issue key={index} issue={issue} />)}
+                            {issues.map((issue, index) => <Issue key={index} issue={issue} setIssues={setIssues} />)}
                         </div>
                     </div>
                 </div>
